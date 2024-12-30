@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f8; /* Lighter background for a softer feel */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+.container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 1.8rem; /* Larger font size for emphasis */
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+}
+
+input, select, button {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect for form inputs */
+input:focus, select:focus {
+    border-color: #27ae60; /* Lively green for focus */
+    outline: none;
+    box-shadow: 0 0 6px rgba(39, 174, 96, 0.4);
+}
+
+/* Register Button Styling */
+button {
+    background-color: #27ae60; /* Green for a fresh, inviting look */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ecc71; /* Lighter green on hover */
+    transform: translateY(-3px); /* Subtle hover effect */
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3);
+}
+
+button:active {
+    background-color: #16a085; /* Darker green when clicked */
+    transform: translateY(0); /* Remove hover effect on click */
+}
+
+/* Disabled State for Register Button */
+button:disabled {
+    background-color: #bdc3c7; /* Greyed out when disabled */
+    cursor: not-allowed;
+}
+
+/* Checkbox Styling */
+label[for="agreement"] {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #555;
+}
+
+label[for="agreement"] input {
+    margin: 0;
+}
+
+/* General Spacing and Alignment */
+input, select, button {
+    width: 100%; /* Full width for form elements */
+}
+
+/* Adding margin for form group elements */
+form > div {
+    margin-bottom: 20px;
+}
